@@ -1,0 +1,54 @@
+.hotproduct {
+  h3 {
+      margin-top: 10px;
+      font-size: 18px; // Slightly larger font size
+      font-weight: bold; // Bold font weight
+      text-align: center;
+      color: #333; // Darker color for better readability
+  }
+
+  .hot-container {
+      padding: 15px;
+      background: #fff;
+      margin: 10px;
+      border-radius: 5px;
+      box-shadow: 1px 1px 5px 1px #e1e1e1;
+
+      ul {
+          display: flex; // Flex display for a responsive layout
+          flex-wrap: wrap; // Allow wrapping for different screen sizes
+          justify-content: space-between; // Space out items evenly
+
+          li {
+              width: calc(25% - 10px); // Adjust width to account for margin
+              margin: 5px; // Add margin for spacing
+              overflow: hidden;
+
+              a {
+                  text-decoration: none; // Remove underline from links
+                  color: inherit; // Inherit text color
+
+                  .image-container {
+                      overflow: hidden; // Hide overflow for zoom effect
+                      margin-bottom: 5px; // Spacing between image and text
+
+                      img {
+                          width: 100%;
+                          transition: transform 0.3s ease; // Transition for zoom effect
+
+                          &:hover {
+                              transform: scale(1.05); // Zoom effect on hover
+                          }
+                      }
+                  }
+
+                  span {
+                      display: block;
+                      text-align: center;
+                      font-size: 15px;
+                  }
+              }
+          }
+      }
+  }
+}

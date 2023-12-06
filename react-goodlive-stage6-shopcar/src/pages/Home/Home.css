@@ -1,0 +1,8 @@
+.home-container {
+    /* Add a dynamic background or a solid color */
+    background-color: #f4f4f4; /* Example color */
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* You can add more specific styles here for different parts of the Home component */

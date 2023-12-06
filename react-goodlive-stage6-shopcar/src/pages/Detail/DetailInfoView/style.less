@@ -1,0 +1,147 @@
+/* Base styles */
+.detail-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tab-content {
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.section-heading {
+  color: #2c3e50;
+  font-size: 20px; /* Reduced base font size */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 20px; /* Reduced base font size */
+  color: #34495e;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.price-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #f6d365 0%, #fda085 100%);
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 20px; /* Reduced base font size */
+  font-weight: bold;
+  color: #fff;
+}
+
+.rent-label {
+  font-size: 0.9rem; /* Reduced base font size */
+  color: #fff;
+}
+
+.details-box {
+  background-color: #ecf0f1;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.details-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.details-list li {
+  text-align: center;
+  padding: 8px 0;
+}
+
+.detail {
+  font-size: 0.9rem; /* Reduced base font size */
+  color: #2c3e50;
+}
+
+.label {
+  font-size: 0.8rem; /* Reduced base font size */
+  color: #7f8c8d;
+}
+
+.additional-info {
+  font-size: 0.8rem; /* Reduced base font size */
+  color: #34495e;
+  margin: 0.5rem 0;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.save-button, .buy-button {
+  padding: 8px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.8rem; /* Reduced base font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.save-button {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.buy-button {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.save-button:hover, .buy-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design for extra small screens such as phones */
+@media (max-width: 480px) {
+  .section-heading {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .rent-label, .detail, .label, .additional-info {
+    font-size: 20px;
+  }
+
+  .save-button, .buy-button {
+    padding: 6px 16px;
+    font-size: 0.7rem;
+  }
+
+  .price-info, .details-box, .additional-info, .actions {
+    padding: 10px;
+  }
+
+  .details-list li {
+    padding: 4px 0;
+  }
+}
